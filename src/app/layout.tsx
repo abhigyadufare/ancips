@@ -4,12 +4,12 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'ANCIPS 2026 | Annual National Conference of Indian Psychiatric Society',
-  description: 'ANCIPS 2026 – Transformative Therapeutics and Technology: Psychiatry 3.0. December 2026, Madurai, Tamil Nadu.',
-  keywords: ['ANCIPS', 'Indian Psychiatric Society', 'psychiatry conference', 'mental health', 'Madurai 2026'],
+  title: 'CIPCON 2026 | Annual National Conference of Indian Psychiatric Society',
+  description: 'CIPCON 2026 – Transformative Therapeutics and Technology: Psychiatry 3.0. September 2026, Raipur, Chhattisgarh. Join us for the flagship academic event of the Indian Psychiatric Society.',
+  keywords: ['CIPCON', 'Indian Psychiatric Society', 'psychiatry conference', 'mental health', 'Madurai 2026'],
   openGraph: {
-    title: 'ANCIPS 2026 | Annual National Conference of Indian Psychiatric Society',
-    description: 'Join us in Madurai for the flagship academic event of the Indian Psychiatric Society.',
+    title: 'CIPCON 2026 | Annual National Conference of Indian Psychiatric Society',
+    description: 'Join us in Raipur for the flagship academic event of the Indian Psychiatric Society.',
     type: 'website',
   }
 }

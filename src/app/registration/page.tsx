@@ -1,24 +1,18 @@
 import PageHero from '@/components/PageHero'
 import Section from '@/components/Section'
 import { ExternalLink, Download, CheckCircle, AlertCircle } from 'lucide-react'
+import brochure from '@/assets/doc/47 CIPCON 2026  Annual Conference of Central Psychiatric Society (Indian Psychiatric Society-CZ).pdf'
 
 const fees = [
-  { category: 'IPS Fellows / Members', standard: '₹ 14,000', regular: '₹ 16,500', late: '₹ 19,000', spot: '₹ 23,300' },
-  { category: 'PG Student', standard: '₹ 9,000', regular: '₹ 10,200', late: '₹ 11,400', spot: '₹ 12,700' },
-  { category: 'IPS Senior Fellow (> 65)', standard: 'Complimentary', regular: 'Complimentary', late: '₹ 12,650', spot: '₹ 14,000' },
-  { category: 'Non-Member (India)', standard: '₹ 20,300', regular: '₹ 21,500', late: '₹ 22,800', spot: '₹ 24,100' },
-  { category: 'SAARC', standard: '₹ 14,000', regular: '₹ 16,500', late: '₹ 19,000', spot: '₹ 23,300' },
-  { category: 'Accompanying Person', standard: '₹ 8,900', regular: '₹ 10,200', late: '₹ 11,400', spot: '₹ 12,700' },
-  { category: 'Trade Delegate', standard: '₹ 30,400', regular: '₹ 31,700', late: '₹ 32,900', spot: '₹ 34,200' },
-  { category: 'International Delegate', standard: '₹ 32,900', regular: '₹ 34,200', late: '₹ 35,500', spot: '₹ 36,700' },
+  { category: 'IPS / CPS / CGPSY Members', standard: '₹ 8,000', regular: '₹ 10,000', spot: '₹ 12,000' },
+  { category: 'PG Residents & Student / Accompaning Persons / Allied Mental Health', standard: '₹ 6,000', regular: '₹ 8,000', spot: '₹ 10,000' },
+  { category: 'Non-Members / Others (India)', standard: '₹ 10,000', regular: '₹ 12,000', spot: '₹ 14,000' },
 ]
 
 const notes = [
-  'Senior Citizen IPS Members (65 Years & Above) please upload/send age proof.',
+  'All the rates mentioned above are inclusive of 18% GST.',
+  'Senior Citizen CPS/IPS Members (65 Years & Above): Free but mandatory registration till 31st July 2026 (Not valid for On-Spot).',
   'Details marked with asterisks (*) are mandatory.',
-  'If the delegate is an IPS member, kindly provide the membership number.',
-  'Complimentary only for Senior Citizen IPS members; not applicable for accompanying persons.',
-  'In case the delegate wishes to pay by cash, the delegate must fill up the offline registration form and email us at info@ancips2027.com along with the copy of deposit slip.',
 ]
 
 export default function RegistrationPage() {
@@ -45,18 +39,17 @@ export default function RegistrationPage() {
                   <tr className="bg-teal-800 text-white">
                     <th className="text-left px-5 py-4 font-accent font-semibold tracking-wide">Category</th>
                     <th className="px-5 py-4 font-accent font-semibold tracking-wide text-center">
-                      <div>Standard</div>
-                      <div className="text-teal-300 text-xs font-normal mt-0.5">Till 15 Aug, 2026</div>
+                      <div>Early Bird Registration</div>
+                      <div className="text-teal-300 text-xs font-normal mt-0.5">Till 31st May, 2026</div>
                     </th>
                     <th className="px-5 py-4 font-accent font-semibold tracking-wide text-center">
-                      <div>Regular</div>
-                      <div className="text-teal-300 text-xs font-normal mt-0.5">Till 15 Nov, 2026</div>
+                      <div>Regular Registration</div>
+                      <div className="text-teal-300 text-xs font-normal mt-0.5">Till 31st Aug, 2026</div>
                     </th>
                     <th className="px-5 py-4 font-accent font-semibold tracking-wide text-center">
-                      <div>Late</div>
-                      <div className="text-teal-300 text-xs font-normal mt-0.5">Till 15 Dec, 2026</div>
+                      <div>On-Spot Registration</div>
+                      <div className="text-teal-300 text-xs font-normal mt-0.5">From 1st Sep, 2026</div>
                     </th>
-                    <th className="px-5 py-4 font-accent font-semibold tracking-wide text-center">On Spot</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -77,7 +70,7 @@ export default function RegistrationPage() {
                           </span>
                         ) : row.regular}
                       </td>
-                      <td className="px-5 py-4 text-center font-body text-teal-700">{row.late}</td>
+                      {/* <td className="px-5 py-4 text-center font-body text-teal-700">{row.late}</td> */}
                       <td className="px-5 py-4 text-center font-body text-teal-700 font-semibold">{row.spot}</td>
                     </tr>
                   ))}
@@ -104,7 +97,7 @@ export default function RegistrationPage() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://registration.ancips2027.com/"
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary text-base inline-flex items-center justify-center gap-2"

@@ -1,9 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react'
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
+import logo from '../assets/img/CIPCON2026_logo.png';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -75,11 +77,18 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-10 h-10 md:w-12 md:h-12">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                {/* <img
                   src="https://ancips2027.com/assets/img/ancips_logo.png"
                   alt="ANCIPS Logo"
                   className="w-full h-full object-contain"
+                /> */}
+                <Image
+                  src={logo}
+                  alt="CIPCON 2026"
+                  fill
+                  className="object-contain"
                 />
+
               </div>
               <div className="hidden sm:block">
                 <div
@@ -87,14 +96,14 @@ export default function Navbar() {
                     scrolled ? 'text-teal-800' : 'text-white'
                   }`}
                 >
-                  ANCIPS 2026
+                  CIPCON 2026
                 </div>
                 <div
                   className={`text-xs font-accent tracking-widest uppercase transition-colors ${
                     scrolled ? 'text-teal-600' : 'text-teal-200'
                   }`}
                 >
-                  Madurai • December 2026
+                  Raipur • September 2026
                 </div>
               </div>
             </Link>
@@ -158,7 +167,7 @@ export default function Navbar() {
               )}
 
               <a
-                href="https://registration.ancips2027.com/"
+                href="/registration"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-3 btn-primary text-sm inline-flex items-center gap-2"
