@@ -77,6 +77,12 @@ export default function RegistrationPage() {
                         From 1st Sep, 2026
                       </div>
                     </th>
+                    <th className="px-5 py-4 font-accent font-semibold tracking-wide text-center">
+                      <div>Payment Details</div>
+                      <div className="text-teal-300 text-xs font-normal mt-0.5">
+                        UPI/NEFT
+                      </div>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -110,18 +116,18 @@ export default function RegistrationPage() {
                       <td className="px-5 py-4 text-center font-body text-teal-700 font-semibold">
                         {row.spot}
                       </td>
-                      <td className="px-5 py-4 text-center font-body text-teal-700 font-semibold">
-                        Payments shall be received by Online Transfer / UPI
-                        Payments only. <br />
-                        Account Name: Chattisgarh Psychiatric Society <br />
-                        Account Number: 09182191023110 <br />
-                        IFSC Code: PUNB0091810 <br />
-                        Bank Name: Punjab National Bank <br />
-                        Branch: Medical College Branch Raipur
-                        <br />
-                      </td>
                     </tr>
                   ))}
+                  <td className="px-5 py-4 text-center font-body text-teal-700 font-semibold">
+                    Payments shall be received by Online Transfer / UPI Payments
+                    only. <br />
+                    Account Name: Chattisgarh Psychiatric Society <br />
+                    Account Number: 09182191023110 <br />
+                    IFSC Code: PUNB0091810 <br />
+                    Bank Name: Punjab National Bank <br />
+                    Branch: Medical College Branch Raipur
+                    <br />
+                  </td>
                 </tbody>
               </table>
             </div>
